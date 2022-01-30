@@ -1,0 +1,15 @@
+var MAX = 1000;
+var firstNum = 1;
+var secondNum = 1;
+var thirdNum = 0;
+function start(){
+	println(firstNum);
+	println(secondNum);
+	
+	while (thirdNum <= MAX - firstNum){
+	thirdNum = firstNum + secondNum;
+	println(thirdNum);
+	firstNum = secondNum;
+	secondNum = thirdNum;
+	}
+}
